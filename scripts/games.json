@@ -4,5 +4,11 @@
     "description": "Fast-paced 3D runner game.",
     "url": "../games/Slope.html",
     "image": "../assets/slope.png"
+  },
+  {
+    "title": "Angry Birds",
+    "description": "Knock down the bads piggies towers!",
+    "url": "../games/Angry Birds.html",
+    "image": "../assets/angrybirds.png"
   }
 ]

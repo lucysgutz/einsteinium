@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
   color: #f1f1f1;
   text-align: center;
   min-height: 100vh;
   background-attachment: fixed;
 }
+
 
 
 header {
@@ -21,7 +24,6 @@ h1 {
   font-size: 3.5em;
   margin: 0;
   color: #00eaff;
-  text-shadow: 0 0 15px #00eaff88;
 }
 
 h2 {
@@ -59,23 +61,27 @@ nav a:hover {
 }
 
 
-.welcome-section {
-  padding: 80px 20px;
-  background: rgba(255, 255, 255, 0.03);
-  margin: 50px auto;
-  max-width: 800px;
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+.welcome-section .version {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #00eaff;
+  margin: 30px 0 10px;
 }
 
-.welcome-section p {
-  font-size: 1.3em;
-  color: #ccc;
+.welcome-section ul {
+  padding-left: 20px;
+  margin: 0 auto 30px auto;
   max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6em;
+  text-align: left;
 }
+
+.welcome-section li {
+  color: #bfbfbf;
+  margin-bottom: 8px;
+  line-height: 1.5em;
+  list-style-type: disc;
+}
+
 
 
 @media (max-width: 600px) {

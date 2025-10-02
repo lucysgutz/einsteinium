@@ -6,6 +6,13 @@ fetch('../scripts/games.json')
     return response.json();
   })
   .then(games => {
+  
+    const gameCountElem = document.getElementById('game-count');
+    if (gameCountElem) {
+      gameCountElem.textContent = games.length;
+    }
+
+
     const gameList = document.getElementById('game-list');
     gameList.innerHTML = ''; 
 
@@ -23,18 +30,11 @@ fetch('../scripts/games.json')
         </div>
       `;
 
-      
       gameList.appendChild(gameCard);
 
-     
       const playButton = gameCard.querySelector('.play-inside-btn');
-
       playButton.addEventListener('click', () => {
         openGameInIframe(game.url, game.title);
-      });
-
-      fullscreenButton.addEventListener('click', () => {
-        openGameInIframe(game.url, game.title, true); // true = fullscreen
       });
     });
   })
@@ -42,7 +42,7 @@ fetch('../scripts/games.json')
 
 
 
-function openGameInIframe(url, title, fullscreen = false) {
+function openGameInIframe(url, title) {
   let existingFrame = document.getElementById('game-iframe-container');
   if (existingFrame) existingFrame.remove();
 
@@ -58,19 +58,7 @@ function openGameInIframe(url, title, fullscreen = false) {
 
   document.body.appendChild(container);
 
-
   document.getElementById('close-iframe-btn').onclick = () => {
     container.remove();
   };
-
-  if (fullscreen) {
-    const iframe = container.querySelector('iframe');
-    if (iframe.requestFullscreen) {
-      iframe.requestFullscreen();
-    } else if (iframe.webkitRequestFullscreen) {
-      iframe.webkitRequestFullscreen();
-    } else if (iframe.msRequestFullscreen) {
-      iframe.msRequestFullscreen();
-    }
-  }
 }
