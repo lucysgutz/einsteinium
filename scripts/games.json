@@ -10,5 +10,47 @@
     "description": "Knock down the bads piggies towers!",
     "url": "../games/Angry Birds.html",
     "image": "../assets/angrybirds.png"
+  },
+  {
+    "title": "1v1.LoL",
+    "description": "Third person shooter & building simulator",
+    "url": "../games/1v1.LoL.html",
+    "image": "../assets/1v1lol.png"
+  },
+  {
+    "title": "Bad Parenting",
+    "description": "Bad Parenting is a psychological horror game where you play as a child facing the terrifying Mr. Red Face and uncover the dark truth behind his existence.",
+    "url": "../games/Bad Parenting 1.html",
+    "image": "../assets/badparenting.png"
+  },
+  {
+    "title": "BitLife",
+    "description": "BitLife is a life simulation game where you make choices for a character from birth to death, shaping their career, relationships, habits, and overall life story.",
+    "url": "../games/BitLife.html",
+    "image": "../assets/bitlife.png"
+  },
+  {
+    "title": "Basket Random",
+    "description": "Silly Pixelized basketball game",
+    "url": "../games/Basket Random.html",
+    "image": "../assets/basketrandom.png"
+  },
+  {
+    "title": "Chiikawa Puzzle",
+    "description": "Try and recreate chiikawa from memory! Re-assemble him and see how funny he looks.",
+    "url": "../games/Chiikawa Puzzle.html",
+    "image": "../assets/Chiikawapuzzle.png"
+  },
+  {
+    "title": "Bloxorz",
+    "description": "Bloxorz is a challenging puzzle game where you control a rectangular block, rolling it across a platform to fit perfectly into a square hole without falling off the edges.",
+    "url": "../games/Bloxorz.html",
+    "image": "../assets/Bloxorz.png"
+  },
+  {
+    "title": "Minecraft",
+    "description": "",
+    "url": "../games/Minecraft.html",
+    "image": "../assets/Minecraft.png"
   }
 ]

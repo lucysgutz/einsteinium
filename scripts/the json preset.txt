@@ -1,0 +1,6 @@
+  {
+    "title": "",
+    "description": "",
+    "url": "../games/.html",
+    "image": "../assets/.png"
+  }
